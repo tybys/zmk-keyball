@@ -105,21 +105,10 @@
         snipe_layer {
             display-name = "SNIPE";
             bindings = <
-                // Первый ряд
-                &kp ESC,     &kp CYRL_YA,    &kp CYRL_VE,    &kp CYRL_IE,    &kp CYRL_ER,    &kp CYRL_TE,
-                &kp CYRL_ER, &kp CYRL_U,     &kp CYRL_SHORT_I, &kp CYRL_O,    &kp CYRL_PE,    &kp BSPC,
-                
-                // Второй ряд
-                &kp TAB,     &kp CYRL_EF,    &kp CYRL_ES,    &kp CYRL_I,     &kp CYRL_V,     &kp CYRL_GHE,
-                &kp CYRL_EN, &kp CYRL_KA,    &kp CYRL_EL,    &kp CYRL_HA,    &kp CYRL_QUOTE, &kp BSLH,
-                
-                // Третий ряд
-                &kp LSHIFT,    &kp CYRL_CHE,   &kp CYRL_SHA,   &kp CYRL_SHCHA, &kp CYRL_HARD_SIGN, &kp CYRL_YERU,
-                &kp CYRL_SOFT_SIGN, &kp CYRL_E, &kp CYRL_YU, &kp CYRL_IO,    &kp CYRL_QUESTION, &kp RSHIFT,
-                
-                // Нижний ряд
-                &kp LCTRL,    &kp LALT,       &kp LGUI,       &kp SPACE,      &mo RUS,         &kp RET,
-                &kp LEFT,    &kp DOWN,       &kp UP,         &kp RIGHT,      &kp DEL,         &kp NONE
+                &trans  &kp CYRL_YA, &kp CYRL_VE, &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
         };
     };

@@ -105,10 +105,7 @@
         snipe_layer {
             display-name = "SNIPE";
             bindings = <
-                &trans  &kp CYRL_YA, &kp CYRL_VE, &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+                &kp CYRL_YA, &kp CYRL_VE
             >;
         };
     };

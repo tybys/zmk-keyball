@@ -122,14 +122,14 @@
             >;
         };
 
-        russian_layer {
-            label = "RUS";
-            bindings = <
-&kp ESCAPE,  &kp CYRL_YA,  &kp CYRL_VE,   &kp CYRL_IE,      &kp CYRL_ER,         &kp CYRL_TE,                 &kp CYRL_ER,         &kp CYRL_U,       &kp CYRL_SHORT_I,  &kp CYRL_O,     &kp CYRL_PE,       &kp BACKSPACE,
-&kp LCTRL,   &kp CYRL_EF,  &kp CYRL_ES,   &kp CYRL_I,       &kp CYRL_V,          &kp CYRL_GHE,                &kp CYRL_EN,         &kp CYRL_KA,      &kp CYRL_EL,       &kp CYRL_HA,    &kp CYRL_QUOTE,    &kp SQT,
-&kp LSFT,    &kp CYRL_CHE, &kp CYRL_SHA,  &kp CYRL_SHCHA,   &kp CYRL_HARD_SIGN,  &kp CYRL_YERU,               &kp CYRL_SOFT_SIGN,  &kp CYRL_E,       &kp CYRL_YU,       &kp CYRL_IO,    &kp CYRL_QUESTION, &kp RSFT,
-&kp LGUI,    &kp LALT,     &lt 6 ESCAPE,  &lt 4 SPACE,      &lt 5 TAB,                           &kp ENTER,   &lt 2 BACKSPACE                                                                         &kp DELETE
-            >;
-        };
+russian_layer {
+    label = "RUS";
+    bindings = <
+        &kp ESCAPE,    &kp CYRL_YA,    &kp CYRL_VE,    &kp CYRL_IE,    &kp CYRL_ER,    &kp CYRL_TE,                  &kp CYRL_ER,    &kp CYRL_U,    &kp CYRL_SHORT_I,    &kp CYRL_O,    &kp CYRL_PE,    &kp BACKSPACE,
+        &kp LCTRL,     &kp CYRL_EF,    &kp CYRL_ES,    &kp CYRL_I,     &kp CYRL_V,     &kp CYRL_GHE,                 &kp CYRL_EN,    &kp CYRL_KA,   &kp CYRL_EL,         &kp CYRL_HA,   &kp CYRL_QUOTE, &kp SQT,
+        &kp LSFT,      &kp CYRL_CHE,   &kp CYRL_SHA,   &kp CYRL_SHCHA, &kp CYRL_HARD_SIGN, &kp CYRL_YERU,              &kp CYRL_SOFT_SIGN, &kp CYRL_E, &kp CYRL_YU,       &kp CYRL_IO,   &kp CYRL_QUESTION, &kp RSFT,
+        &kp LGUI,      &kp LALT,       &lt 6 ESCAPE,   &lt 4 SPACE,    &lt 5 TAB,                          &kp ENTER,      &lt 2 BACKSPACE,                                                  &kp DELETE
+    >;
+};
     };
 };

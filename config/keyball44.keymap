@@ -5,13 +5,6 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-//┏ ┓
-//━
-//┃
-//┗ ┛
-//╋
-//┻ ┳
-//┣ ┫
         // Основной слой (QWRT)
         default_layer {
             label = "QWRT";

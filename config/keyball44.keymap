@@ -29,6 +29,17 @@
 / {
     // custom shift using mod-morph 
     behaviors {
+        // ZMK_BEHAVIOR(comma_inner_morph, mod_morph,
+        //     bindings = <&kp SEMICOLON>, <&kp LESS_THAN>;
+        //     mods = <(MOD_LCTL)>;
+        // )
+        rd: redo {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Z>, <&kp LGUI>;
+
+            mods = <(MOD_LSFT)>;
+        };
         cmqus: comma_question {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_QUESTION";
@@ -114,7 +125,7 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&none  &none  &none  &none  &none  &none                           &none     &none     &none          &none        &none      &none
+&none  &none  &none  &none  &none  &none                           &none     &rd       &mt LGUI V     &none        &none      &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT &none              &kp CAPS  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none
 &none  &none  &none  &none  &none  &none                           &kp INS   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
 &none  &none  &none  &none  &none                           &none  &none                                                      &none

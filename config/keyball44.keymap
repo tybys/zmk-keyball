@@ -114,10 +114,10 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&none  &none  &none  &none  &none  &none                           &none     &none     &none          &none        &none      &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT &none              &kp CAPS  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none
+&none  &none  &none  &none  &none  &none                           &kp INS   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+&none  &none  &none  &none  &none                           &none  &none                                                      &none
             >;
         };
     };

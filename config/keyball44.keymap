@@ -29,17 +29,6 @@
 / {
     // custom shift using mod-morph 
     behaviors {
-        // ZMK_BEHAVIOR(comma_inner_morph, mod_morph,
-        //     bindings = <&kp SEMICOLON>, <&kp LESS_THAN>;
-        //     mods = <(MOD_LCTL)>;
-        // )
-        rd: redo {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp Z>, <&kp LGUI>;
-
-            mods = <(MOD_LSFT)>;
-        };
         cmqus: comma_question {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_QUESTION";
@@ -68,7 +57,7 @@
 &none  &kp Q        &kp W         &kp E        &kp R        &kp T                 &kp Y            &kp U        &kp I        &kp O       &kp P      &none
 &none  &mt LGUI A   &mt LALT S    &mt LCTRL D  &mt LSHFT F  &kp G                 &kp H            &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI   &none
 &none  &kp Z        &kp X         &kp C        &kp V        &kp B                 &kp N            &kp M        &kp COMMA    &kp DOT     &kp SLASH  &none
-&none  &none        &lt 3 ESCAPE  &lt 6 SPACE  &lt 4 TAB             &lt 2 ENTER  &lt 1 BACKSPACE                                                   &none
+&none  &mo 4        &lt 7 ESCAPE  &lt 6 SPACE  &lt 5 TAB             &lt 3 ENTER  &lt 2 BACKSPACE                                                   &none
             >;
         };
 
@@ -105,10 +94,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none  &none     &none     &none      &none      &none               &rd              &mt LGUI V  &mt LGUI X  &mt LGUI C  &mt LGUI Z  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none               &kp  PAGE_UP     &mkp LCLK   &none       &mkp RCLK   &mkp MCLK   &none
-&none  &none     &none     &none      &none      &none               &kp  PAGE_DOWN   &none       &none       &none       &none       &none
-&none  &none     &none     &none      &none                   &none  &none                                                            &none
+&none  &none     &none     &none      &none      &none               &kp LS(LG(Z))    kp LG(V)   &kp LG(X)   &kp LG(C)   &kp LG(Z)  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none               &kp  PAGE_UP     &mkp LCLK  &none       &mkp RCLK   &mkp MCLK  &none
+&none  &none     &none     &none      &none      &none               &kp  PAGE_DOWN   &none      &none       &none       &none      &none
+&none  &none     &none     &none      &none                   &none  &none                                                          &none
             >;
         };
         

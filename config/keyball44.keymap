@@ -111,7 +111,7 @@
 &none  &none     &none     &none      &none                   &none  &none                                                            &none
             >;
         };
-
+        
         scroll_layer {
             label = "SCROLL";
             bindings = <
@@ -125,7 +125,7 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&none  &none  &none  &none  &none  &none                           &rd       &mt LGUI V  &mt LGUI X     &mt LGUI C   &mt LGUI Z  &none
+&none  &none  &none  &none  &none  &none                           &kp LS(LG(Z))       &kp LG(V)  &kp LG(X)     &kp LG(C)   &kp LG(Z)  &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT &none              &kp CAPS  &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT   &none
 &none  &none  &none  &none  &none  &none                           &kp INS   &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &none
 &none  &none  &none  &none  &none                           &none  &none                                                         &none

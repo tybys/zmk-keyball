@@ -48,7 +48,7 @@
          excl_number: excl_number {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp N1>;  // ! при обычном нажатии, 1 с Shift
+            bindings = <&kp EXCL>, <&kp N1>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };

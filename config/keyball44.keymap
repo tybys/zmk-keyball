@@ -83,7 +83,7 @@
             label = "RU";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6
-&trans  &excl_one  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT
+&trans  &kp LEFT_BRACKET  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT
 &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &kp LBKT
 &trans  &trans  &trans  &trans  &trans                    
             >;

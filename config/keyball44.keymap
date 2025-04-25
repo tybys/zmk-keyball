@@ -1,9 +1,9 @@
 #define DEFAULT 0
 #define FUN 1
-#define SYM 2
-#define MOUSE 3
-#define SCROLL 4
-#define RU 5
+#define RU 2
+#define SYM 3
+#define MOUSE 4
+#define SCROLL 5
 
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
@@ -31,7 +31,6 @@
     behaviors {
         cmqus: comma_question {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp QUESTION>;
 
@@ -40,7 +39,6 @@
 
         dtsmi: dot_semi {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_SEMI";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp SEMI>;
 
@@ -49,7 +47,6 @@
 
          excl_number: excl_number {
             compatible = "zmk,behavior-mod-morph";
-            label = "EXCL_NUMBER";
             #binding-cells = <0>;
             bindings = <&kp EXCL>, <&kp N1>;  // ! при обычном нажатии, 1 с Shift
 
@@ -87,6 +84,33 @@
 &trans  &kp LEFT_BRACKET  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &kp LBKT                             &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                                          &trans  &trans                                  &trans 
+            >;
+        };
+
+        symbol_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+            >;
+        };
+
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+            >;
+        };
+
+        scroll_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
         };
     };

@@ -1,24 +1,10 @@
-name: Build ZMK
-
-on: [push]
+name: Build ZMK firmware
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Build Firmware
-      run: |
-        west init -l config
-        west update
-        west build -p always -b keyball44 -- -DZMK_CONFIG="$GITHUB_WORKSPACE/config" | tee build.log
-        echo "::group::Build log"
-        cat build.log
-        echo "::endgroup::"
-        
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: firmware
-        path: build/zephyr/zmk.uf2
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      # Добавляем флаги для детализации логов
+      extra-cmake-args: -DCMAKE_VERBOSE_MAKEFILE=ON -DZMK_LOG_LEVEL=DEBUG
+      extra-west-args: --verbose

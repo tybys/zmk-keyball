@@ -1,6 +1,24 @@
-name: Build ZMK firmware
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK
+
+on: [push]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Build Firmware
+      run: |
+        west init -l config
+        west update
+        west build -p always -b keyball44 -- -DZMK_CONFIG="$GITHUB_WORKSPACE/config" | tee build.log
+        echo "::group::Build log"
+        cat build.log
+        echo "::endgroup::"
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: firmware
+        path: build/zephyr/zmk.uf2

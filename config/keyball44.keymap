@@ -73,7 +73,7 @@
             label = "FUN";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6
-&trans  &exclone  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT
+&trans  &excl_number_1  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT
 &trans  &trans  &trans  &trans  &trans  &kp LBKT
 &trans  &trans  &trans  &trans  &trans                    
             >;

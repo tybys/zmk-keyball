@@ -51,7 +51,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EXCL_NUMBER";
             #binding-cells = <0>;
-            bindings = <&kp EXCLAMATION>, <&kp NUMBER_1>;
+            bindings = <&kp EXCL>, <&kp N1>;  // ! при обычном нажатии, 1 с Shift
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };

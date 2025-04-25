@@ -49,7 +49,7 @@
 
         exclone: excl_number_1 {
             compatible = "zmk,behavior-mod-morph";
-            label = "EXCL_ONE";
+            label = "EXCL_NUMBER_1";
             #binding-cells = <0>;
             bindings = <&kp EXCL>, <&kp NUMBER_1>; // ! -> 1
             mods = <(MOD_LSFT)>;

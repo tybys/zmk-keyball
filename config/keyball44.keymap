@@ -47,7 +47,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        exclone: excl_number_1 {
+        excl_number_1: excl_number_1 {
             compatible = "zmk,behavior-mod-morph";
             label = "EXCL_NUMBER_1";
             #binding-cells = <0>;

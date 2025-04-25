@@ -51,7 +51,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EXCL_ONE";
             #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp NUMBER_1> // ! -> 1
+            bindings = <&kp EXCL>, <&kp NUMBER_1>; // ! -> 1
             mods = <(MOD_LSFT)>;
         }
     };

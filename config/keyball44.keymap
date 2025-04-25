@@ -63,10 +63,10 @@
 &kp TAB      &kp Q     &kp W         &kp E        &kp R      &kp T                      &kp Y            &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
 &kp LCTRL       &kp A     &kp S         &kp D        &kp F      &kp G                   &kp H            &kp J  &kp K      &kp L    &kp SEMI   &kp MINUS
 &kp LEFT_SHIFT  &kp Z     &kp X         &kp C        &kp V      &kp B                   &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp APOS
-&kp LALT        &kp LGUI  &lt 1  &lt 3  &kp SPACE             &lt 5 RET  &lt 2 DEL                                                    &kp RALT
+&kp LALT        &kp LGUI  &lt 1 AT  &lt 3 AT  &kp SPACE             &lt 5 RET  &lt 2 DEL                                                    &kp RALT
             >;
         };
-
+devicetree error: <Node /pin-controller/uart0_sleep in '/tmp/zmk-config/zephyr/misc/empty_file.c'> lacks #binding-cells
         function_layer {
             label = "FUN";
             bindings = <

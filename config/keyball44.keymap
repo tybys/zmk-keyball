@@ -77,7 +77,7 @@
 &trans  &trans  &trans  &trans  &trans  &kp LBKT
 &trans  &trans  &trans  &trans  &trans                    
             >;
-        }
+        };
 
         ru_layer {
             label = "RU";
@@ -87,7 +87,7 @@
 &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &kp LBKT
 &trans  &trans  &trans  &trans  &trans                    
             >;
-        }
+        };
     };
 };
 

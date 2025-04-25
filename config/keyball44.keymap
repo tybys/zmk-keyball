@@ -72,20 +72,20 @@
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6
-&trans  &exclnum  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT
-&trans  &trans  &trans  &trans  &trans  &kp LBKT
-&trans  &trans  &trans  &trans  &trans                    
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &exclnum  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LBKT                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                               &trans  &trans                                  &trans
             >;
         };
 
         ru_layer {
             label = "RU";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6
-&trans  &kp LEFT_BRACKET  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT
-&kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &kp LBKT
-&trans  &trans  &trans  &trans  &trans                    
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &kp LBKT                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                          &trans  &trans                                  &trans 
             >;
         };
     };

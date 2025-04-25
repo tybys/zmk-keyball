@@ -47,12 +47,12 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        excl_number_1: excl_number_1 {
+         excl_num: excl_number {
             compatible = "zmk,behavior-mod-morph";
-            label = "EXCL_NUMBER_1";
+            label = "EXCL_NUMBER";
             #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp NUMBER_1>; // ! -> 1
-            mods = <(MOD_LSFT)>;
+            bindings = <&kp EXCL>, <&kp N1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -73,7 +73,7 @@
             label = "FUN";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6
-&trans  &excl_number_1  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT
+&trans  &excl_num  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT
 &trans  &trans  &trans  &trans  &trans  &kp LBKT
 &trans  &trans  &trans  &trans  &trans                    
             >;

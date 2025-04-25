@@ -53,7 +53,7 @@
             #binding-cells = <0>;
             bindings = <&kp EXCL>, <&kp NUMBER_1>; // ! -> 1
             mods = <(MOD_LSFT)>;
-        }
+        };
     };
 
     keymap {

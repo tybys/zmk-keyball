@@ -116,6 +116,49 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        //
+        dqts_sqts: dqts_sqts {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        cln_scln: cln_scln {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        undr_mns: undr_mns {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER>, <&kp KP_MINUS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        pls_eql: pls_eql {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS>, <&kp KP_EQUAL>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        lbrc_lbrk: lbrc_lbrk {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp LEFT_BRACKET>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        qstn_bksh: qstn_bksh {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp QUESTION>, <&kp BACKSLASH>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -154,10 +197,10 @@
         symbol_layer {
             label = "SUM";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&kp ESC  &dqts_sqts  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &star_eight              &lprnts_nine  &excl_number  &caret_six  &kp LEFT_BRACKET  &dlr_four  &trans
+&kp LCTRL  &cln_scln  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &at_two
+&kp LSHFT  &undr_mns  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0              &undr_mns  &pls_eql  &kp KP_MINUS  &lbrc_lbrk  &qstn_bksh  &kp RSHFT
+&kp LALT  &kp LGUI  &kp RALT  &trans  &trans              &trans  &trans                                  &trans
             >;
         };
 

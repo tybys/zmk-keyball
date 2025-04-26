@@ -52,6 +52,70 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        at_two: at_two {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AT>, <&kp N2>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        hash_three: hash_three {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp HASH>, <&kp N3>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dlr_four: dlr_four {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOLLAR>, <&kp N4>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        prct_five: prct_five {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PERCENT>, <&kp N5>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        lprnts_nine: lprnts_nine {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp N9>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        rprnts_nine: rprnts_nine {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp N0>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        caret_six: caret_six {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp CARET>, <&kp N6>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ampersand_seven: ampersand_seven {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AMPERSAND>, <&kp N7>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        star_eight: star_eight {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp STAR>, <&kp N8>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -62,8 +126,8 @@
             bindings = <
 &kp TAB      &kp Q     &kp W         &kp E        &kp R      &kp T                      &kp Y            &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
 &kp LCTRL       &kp A     &kp S         &kp D        &kp F      &kp G                   &kp H            &kp J  &kp K      &kp L    &kp SEMI   &kp MINUS
-&kp LEFT_SHIFT  &kp Z     &kp X         &kp C        &kp V      &kp B                   &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp APOS
-&kp LALT        &kp LGUI  &lt 1 ESC  &mo 3  &kp SPACE             &lt 5 RET  &lt 2 DEL                                                    &kp RALT
+&kp LEFT_SHIFT  &kp Z     &lt 4 X         &kp C        &kp V      &kp B                   &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp APOS
+&kp LALT        &kp LGUI  &lt 5 ESC  &mo 3  &kp SPACE             &lt 1 RET  &lt 2 DEL                                                    &kp RALT
             >;
         };
 
@@ -71,8 +135,8 @@
             label = "FUN";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &excl_number  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LBKT                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &excl_number  &at_two  &hash_three  &dlr_four  &prct_five                  &lprnts_nine  &rprnts_nine  &caret_six  &ampersand_seven  &star_eight  &kp BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &kp LBKT                             &kp RBKT  &kp EQUAL  &kp KP_MINUS  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                               &trans  &trans                                  &trans
             >;
         };

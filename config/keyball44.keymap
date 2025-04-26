@@ -1,7 +1,7 @@
 #define DEFAULT 0
 #define FUN 1
-#define RU 2
-#define SYM 3
+#define SYM 2
+#define RU 3
 #define MOUSE 4
 #define SCROLL 5
 
@@ -167,40 +167,40 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp TAB    &kp Q     &kp  W     &kp E  &kp R  &kp T       &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
-&kp LCTRL  &kp A     &kp S      &kp D  &kp F  &kp G       &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp MINUS
-&kp LSHFT  &kp Z     &lt 4 X    &kp C  &kp V  &kp B       &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp APOS
-&kp LALT   &kp LGUI  &lt 5 ESC  &mo 3  &kp SPACE          &lt 1 RET  &lt 2 DEL                         &kp RALT
+&kp TAB    &kp Q     &kp  W     &kp E    &kp R  &kp T       &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BSPC
+&kp LCTRL  &kp A     &kp S      &kp D    &kp F  &kp G       &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp MINUS
+&kp LSHFT  &kp Z     &lt 4 X    &lt 5 C  &kp V  &kp B       &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp APOS
+&kp LALT   &kp LGUI  &lt 1 ESC  &mo 3    &kp SPACE          &lt 1 RET  &lt 2 DEL                         &kp RALT
             >;
         };
 
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &excl_number  &at_two  &hash_three  &dlr_four  &prct_five          &lprnts_nine  &rprnts_nine  &caret_six    &ampersand_seven  &star_eight  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &kp LBKT                           &kp RBKT      &kp EQUAL     &kp KP_MINUS  &trans            &trans       &trans
-&trans  &trans  &trans  &trans  &trans                                     &trans    &trans                                                         &trans
+&kp F1  &kp F2          &kp F3   &kp F4       &kp F5       &kp F6             &kp F7        &kp F8        &kp F9        &kp F10           &kp F11      &kp F12
+&trans  &excl_number    &at_two  &hash_three  &dlr_four    &prct_five         &lprnts_nine  &rprnts_nine  &caret_six    &ampersand_seven  &star_eight  &kp BACKSLASH
+&trans  &none           &none    &none        &none        &kp LBKT           &kp RBKT      &kp EQUAL     &kp KP_MINUS  &none             &none        &none
+&trans  &trans  &trans  &trans   &trans                                       &trans        &mo 3                                                      &trans
             >;
         };
  
         ru_layer {
             label = "RU";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &kp SEMI  &kp SINGLE_QUOTE
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&none  &none  &none  &none  &none  &none              &none  &none  &none  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none  &none  &none  &none  &none  &none              &none  &none  &none  &none  &kp SEMI          &kp SINGLE_QUOTE
+&none  &none  &none  &none  &none  &none              &none  &none  &none  &none  &none             &none
+&none  &none  &none  &none  &none              &none  &none                                         &none
             >;
         };
 
         symbol_layer {
             label = "SUM";
             bindings = <
-&kp ESC  &dqts_sqts  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &star_eight              &lprnts_nine  &excl_number  &caret_six  &kp LEFT_BRACKET  &dlr_four  &trans
-&kp LCTRL  &cln_scln  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &at_two
-&kp LSHFT  &undr_mns  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0            &undr_mns  &pls_eql  &kp KP_MINUS  &lbrc_lbrk  &qstn_bksh  &kp RSHFT
-&kp LALT  &kp LGUI  &kp RALT  &trans  &trans              &trans  &trans                                  &trans
+&kp ESC    &dqts_sqts  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &star_eight            &lprnts_nine    &excl_number    &caret_six    &kp LEFT_BRACKET  &dlr_four   &trans
+&kp LCTRL  &cln_scln   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &trans      &at_two
+&kp LSHFT  &undr_mns   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0           &undr_mns       &pls_eql        &kp KP_MINUS  &lbrc_lbrk        &qstn_bksh  &kp RSHFT
+&kp LALT   &kp LGUI    &kp RALT      &trans        &trans        &trans                 &trans                                                                      &trans
             >;
         };
 
@@ -220,19 +220,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans                          &trans
             >;
         };
     };
 };
-
-// &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-// &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-// &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-// &trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
-
-
-// &none   &kp N1          &kp N2          &kp N3        &kp N4     &kp N5              &kp N6         &kp N7     &kp N8  &kp N9     &kp N0     &none
-// &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none               &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK  &none
-// &none   &none           &none           &none         &none      &none               &kp PAGE_DOWN  &none      &none   &none      &none      &none
-// &trans  &trans          &trans          &trans        &trans                 &trans  &trans     

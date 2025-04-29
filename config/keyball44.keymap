@@ -159,6 +159,12 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        td_backspace: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>; // Время между нажатиями для распознавания двойного тапа
+            bindings = <&kp backspace>, <&kp LEFT_BRACKET>; // Первое нажатие — Backspace, второе — Delete
+        };
     };
 
     keymap {
@@ -167,8 +173,8 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp TAB    &kp Q     &kp  W     &kp E    &kp R  &kp T       &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BSPC
-&kp LCTRL  &kp A     &kp S      &kp D    &kp F  &kp G       &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp MINUS
+&kp TAB    &kp Q     &kp  W     &kp E    &kp R  &kp T       &kp Y  &kp U  &kp I      &kp O    &kp P      &kp tap_dance
+&kp LCTRL  &kp A     &kp S      &kp D    &kp F  &kp G       &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
 &kp LSHFT  &kp Z     &lt 4 X    &lt 5 C  &kp V  &kp B       &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp APOS
 &kp LALT   &kp LGUI  &lt 1 ESC  &mo 3    &kp SPACE          &lt 1 RET  &lt 2 DEL                         &kp RALT
             >;

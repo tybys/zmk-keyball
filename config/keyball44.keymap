@@ -163,7 +163,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>; // Время между нажатиями для распознавания двойного тапа
-            bindings = <&kp backspace>, <&kp LEFT_BRACKET>; // Первое нажатие — Backspace, второе — Delete
+            bindings = <&kp BACKSPACE>, <&kp LEFT_BRACKET>; // Первое нажатие — Backspace, второе — Delete
         };
     };
 
